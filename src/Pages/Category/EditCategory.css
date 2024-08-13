@@ -1,0 +1,137 @@
+/* EditCategory.css */
+.bread {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 20px; */
+}
+
+.head h4 {
+    margin: 0;
+}
+
+.links {
+    margin-left: auto;
+}
+
+.add-new {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.d-form {
+    /* margin-bottom: 20px; */
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-item {
+    /* margin-bottom: 10px; */
+}
+
+.detail-item strong {
+    font-weight: bold;
+}
+
+.aadharcard {
+    display: flex;
+    gap: 10px;
+}
+.aadhaar-imgage{
+    width: 50%;
+    height: auto;
+}
+.aadhaar-img {
+    width: 50%;
+    height: auto;
+}
+
+.pdf-container {
+    width: 600px;
+    padding: 10px;
+    background-color: #e6a15c;
+    border: 2px solid #c0440d;
+    border-radius: 10px;
+    /* margin-bottom: 20px; */
+    /* display: none; */
+}
+
+.pdf-header {
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+
+.pdf-header img {
+    width: 30px;
+    height: auto;
+    /* margin-bottom: 10px; */
+}
+
+.pdf-header h1 {
+    font-size: 28px;
+    margin: 0;
+    color: #d02626;
+}
+
+.pdf-header p {
+    font-size: 14px;
+    color: #000;
+}
+
+.pdf-item {
+    /* margin-bottom: 15px; */
+}
+
+.pdf-item label {
+    font-size: 16px;
+    color: #000;
+}
+
+.pdf-item p {
+    font-size: 14px;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.pdf-img {
+    width: 200px;
+    height: auto;
+    margin-top: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.pdf-footer {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.pdf-footer img {
+    width: 100px;
+    height: auto;
+    /* margin-bottom: 5px; */
+}
+
+.pdf-footer p {
+    font-size: 18px;
+    color: #000;
+}
+
+.send-receipt-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-receipt-btn:disabled {
+    background-color: #0056b3;
+}
