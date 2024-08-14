@@ -12,6 +12,7 @@ const AllCategory = () => {
     const getApiData = async () => {
         try {
             const res = await axios.get("https://api.bajrangvahinidal.com/api/signup");
+            console.log(res)
             if (res.status === 200) {
                 const newData = res.data.data;
                 setData(newData.reverse());
@@ -73,6 +74,7 @@ const AllCategory = () => {
                             <th scope="col">Amount</th>
                             {/* <th scope="col">Payment Status</th> */}
                             <th scope="col">Image</th>
+                            <th>Date</th>
                             <th scope="col">See Details</th>
                         </tr>
                     </thead>
@@ -88,6 +90,7 @@ const AllCategory = () => {
                                     <td>{item.donationAmount}</td>
                                     {/* <td>{item.paymentStatus}</td> */}
                                     <td><img src={item.image} alt="User" /></td>
+                                    <td>{new Date(item.createdAt).toLocaleDateString()}</td>
                                     <td><Link className="bt edit" to={`/see-user/${item._id}`}><i className="fa-solid fa fa-eye"></i></Link></td>
                                 </tr>
                             ))
